@@ -1103,8 +1103,8 @@ public class FileUtil {
 			reader = new BufferedReader(new FileReader(new File(mcDataDir, "options.txt")));
 			String line;
 			while ((line = reader.readLine()) != null) {
-				if (line.startsWith("key_"))
-					continue;
+				/*if (line.startsWith("key_"))
+					continue;*/
 
 				writer.print(line + "\n");
 			}
